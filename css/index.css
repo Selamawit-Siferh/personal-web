@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'memphis';
+    src: url(./Memphis\ River.otf);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container__header {
+    grid-column-start: span 3;
+}
+
+.container__main {
+    background-color: floralwhite;
+    grid-column-start: span 2;
+}
+
+.main__text {
+    text-align: center;
+    padding: 2em;
+}
+
+.main__text--h1 {
+    font-family: 'memphis', 'Bush Script MT', 'copperplate', 'papyrus', 'Times New Roman', Times, serif;
+    font-size: 4em;
+    color: #0F292F;
+}
+
+.main__text--p {
+    font-size: 3vh;
+    font-family: 'copperplate', 'papyrus', 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.main__text a {
+    text-decoration: none;
+    border: .5px solid;
+    font-size: larger;
+    color: black;
+    border-color: black;
+    padding: .1em;
+}
+
+.main__text a:link {
+    background-color: #86B3D1;
+}
+
+.main__text a:visited {
+    background-color: #86B3D1;
+}
+
+.main__text a:focus {
+    color: #354e76;
+}
+
+.main__text a:hover {
+    background-color: #fcd3be;
+    color: black;
+}
+
+.container__aside {
+    background-color: #EEE2DC;
+    grid-column-start: span 1;
+    padding: 4em;
+}
+
+.container__aside--h2 {
+    font-size: 4vh;
+    font-family: 'copperplate', cursive, 'Times New Roman', 'Times New Roman', Arial, sans-serif;
+}
+
+.aside__quote {
+    font-family: 'Lucidia console', 'monaco', 'Times New Roman', Times, Arial;
+    font-size: 3vh;
+}
+
+.container__footer {
+    grid-column-start: span 3;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    .container {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .container__main--img {
+        width: 100%;
+    }
+    .container__main {
+        font-size: 6vw;
+    }
+    .container__aside {
+        font-size: 5vw;
+        padding: 1em;
+    }
+    .container__header,
+    .container__aside,
+    .container__main,
+    .container__footer {
+        grid-column-start: span 1;
+    }
+    .goright__h1 {
+        font-size: 4.3vh;
+        font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .goright_p {
+        font-size: 2vh;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+    .container {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .container__header,
+    .container__aside,
+    .container__main,
+    .container__footer {
+        grid-column-start: span 1;
+    }
+    .goright__h1 {
+        font-size: 5vh;
+        font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .container__aside {
+        font-size: 3vh;
+        padding: 1em;
+    }
+    .container__main--img {
+        width: 100%;
+        height:auto;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+    .container {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .container__header,
+    .container__aside,
+    .container__main,
+    .container__footer {
+        grid-column-start: span 1;
+    }
+    .container__main {
+        font-size: 3vh;
+        background-color: #d5bec4;
+    }
+    .goright__h1 {
+        color: #796741;
+    }
+    .goright__aside {
+        font-size: 3vh
+    }
+}

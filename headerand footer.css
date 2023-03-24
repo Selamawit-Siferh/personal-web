@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'memphis';
+    src: url(./Memphis\ River.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.container__header {
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.container__header--logo {
+    flex: 1;
+    font-size: 3vw;
+    font-family: 'memphis', 'cursive';
+    padding: .5em;
+    color: white;
+}
+
+.container__nav--nav__ul {
+    display: flex;
+    list-style: none;
+}
+
+.container__nav--nav__ul a {
+    padding: .2em .9em;
+    font-size: 1.7vw;
+}
+
+.container__nav--nav__ul a:link {
+    color: #04E3FF;
+}
+
+.container__nav--nav__ul a:visited {
+    color: #04E3FF;
+}
+
+.container__nav--nav__ul a:focus {
+    color: #c2edff;
+    background-color: #343638;
+}
+
+.container__nav--nav__ul a:hover {
+    background-color: #354e76;
+}
+
+.footer__socials {
+    display: flex;
+    font-size: 1.3vw;
+    justify-content: center;
+}
+
+span {
+    display: none;
+}
+
+.container__footer {
+    /*background-color: #00264a;*/
+    background-color: #181818;
+}
+
+.footer__socials a {
+    padding: 1em .5em;
+}
+
+.footer__socials a:link {
+    color: beige;
+    font-size: 4em;
+}
+
+.footer__socials a:visited {
+    color: beige;
+}
+
+.footer__socials a:focus {
+    color: #CEBC81;
+}
+
+.footer__socials a:hover {
+    color: #b7cc75;
+}
+
+.footer__socials a:active {
+    color: #83c6d4;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 3vh;
+    padding: 1em;
+    color: white;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    .container__header {
+        display: block;
+        padding: 2em;
+        background-color: #00264a;
+    }
+    .container__header--logo {
+        font-size: 7.2vh;
+        text-align: center;
+    }
+    .container__nav--nav__ul {
+        display: block;
+        text-align: center;
+        font-size: 5vw;
+    }
+    .container__nav--nav__ul a {
+        font-size: 4vh;
+    }
+    .container__footer {
+        background-color: #00264a;
+    }
+    .footer__socials a {
+        text-align: center;
+    }
+    .footer__socials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 3vw;
+        text-align: center;
+    }
+    .footer__copyright {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+    .container {
+        width: 100%;
+    }
+    .container__header {
+        height: auto;
+        display: block;
+        background-color: #00264a;
+    }
+    .container__header--logo {
+        font-size: 6vh;
+        padding: .5em;
+        display: block;
+        text-align: center;
+    }
+    .container__nav--nav__ul {
+        text-align: center;
+        display: block;
+        padding: .5em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container__nav--nav__ul a {
+        font-size: 3.4vh;
+    }
+    .container__footer {
+        background-color: #00264a;
+    }
+    .footer__socials {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 2.3vw;
+    }
+    .footer__copyright {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    .container__header {
+        padding: 1em;
+        display: block;
+    }
+    .container__header--logo {
+        text-align: center;
+        display: block;
+        font-size: 6.2vh;
+    }
+    .container__nav--nav__ul {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    .container__nav--nav__ul a {
+        font-size: 4vh;
+        text-align: center;
+    }
+    .footer__copyright {
+        font-size: 2vw;
+        padding: 1em;
+    }
+}

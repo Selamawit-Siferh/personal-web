@@ -1,0 +1,75 @@
+.container__main {
+    display: grid;
+    overflow: auto;
+    padding: 1em;
+    background-color: #bdb3b2;
+}
+
+img {
+    float: right;
+}
+
+.main__a {
+    padding: .5em;
+    color: white;
+    text-decoration: underline;
+}
+
+.main__a:link {
+    background-color: #86B3D1;
+    color: black;
+}
+
+.main__a:visited {
+    background-color: #86B3D1;
+    color: black;
+}
+
+.main__a:hover {
+    background-color: #D2feff;
+    color: black;
+}
+
+.main__figure--p {
+    padding: 2em;
+    font-size: 3vh;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    img {
+        float: none;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .main__figure--p {
+        text-align: center;
+        font-size: 5.2vw;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+    img {
+        float: none;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .main__figure--p {
+        font-size: 3.4vh;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+    img {
+        float: none;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .main__figure--p {
+        font-size: 3.7vh;
+        text-align: center;
+    }
+}

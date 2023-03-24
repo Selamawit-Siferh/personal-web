@@ -1,0 +1,53 @@
+.container__main {
+    padding: 2em;
+    display: list-item;
+    align-items: center;
+    font-family: serif;
+    font-size: 3.4vh;
+    background-color: #EEE2DC;
+}
+
+.main__ul--li>ul {
+    margin-left: 1.4em;
+}
+
+.main__ul--li:not(:first-of-type) {
+    margin-top: 1.5em;
+}
+
+.li__contact {
+    text-decoration: none;
+    border: 1px solid;
+    font-size: larger;
+    color: black;
+    border-color: black;
+}
+
+.li__contact {
+    color: white;
+}
+
+.li__contact:link {
+    background-color: #86B3D1;
+    color: black;
+}
+
+.li__contact:visited {
+    background-color: #86B3D1;
+    color: black;
+}
+
+.li__contact:focus {
+    color: #354e76;
+}
+
+.li__contact:hover {
+    background-color: #D2feff;
+    color: black;
+}
+
+.li__contact:active {}
+
+.main__ul--li__h1 {
+    font-size: 4vh;
+}

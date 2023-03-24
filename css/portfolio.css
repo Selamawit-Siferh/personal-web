@@ -1,0 +1,74 @@
+.container {
+    overflow: hidden;
+}
+
+.container__main {
+    overflow: auto;
+    padding: 2em;
+    background-color: #c7e6f5;
+}
+
+.main__img {
+    float: right;
+    width: 30vw;
+    padding: 1em;
+}
+
+.main__h1 {
+    padding: .5em;
+    font-family: cursive, 'papyrus', 'Times New Roman', Times, serif;
+}
+
+.main__p {
+    font-size: 3vh;
+    word-wrap: break-word;
+    padding: 1em;
+    font-family: cursive, 'papyrus', 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    .main__img {
+        float: none;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .main__p {
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .main__h1 {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+    .main__img {
+        float: none;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .main__h1 {
+        font-size: 4vh;
+    }
+    .main__p {
+        font-size: 3.2vh;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+    .main__img {
+        float: none;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .main__h1 {
+        font-size: 4vh;
+    }
+    .main__p {
+        font-size: 3.4vh;
+    }
+}
